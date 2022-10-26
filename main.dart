@@ -11,8 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         
-        backgroundColor: Color.fromARGB(255, 241, 239, 239),
-        
+        backgroundColor: Color.fromARGB(255, 232, 246, 255),
         body: Column(
           
           mainAxisAlignment: MainAxisAlignment.center,
@@ -21,13 +20,11 @@ class MyApp extends StatelessWidget {
             CircleAvatar(
               radius: 60.0,
               backgroundColor: Colors.blue,
-              backgroundImage: NetworkImage("https://soft.clbug.com/wp-content/uploads/soft/medical/1615043870.png"),
+              backgroundImage: NetworkImage("https://cdn.memegenerator.es/imagenes/memes/full/22/18/22185707.jpg"),
             ),
           
             SizedBox(
-              height: 90.0,
-              
-              
+              height: 90.0,           
             ),
           
             Divider(
@@ -37,36 +34,36 @@ class MyApp extends StatelessWidget {
               endIndent: 85.0,
             ),
            
-            
-            
-            
-            
             Card (
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(40),
+              ),
+              elevation: 20.0,
               color: Colors.white,
               margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 15.0),
               child: ListTile(
                 title: Text("Email Address"),
                 subtitle: Text("Username@gmail.com"),
-                leading: Icon(Icons.email_outlined),
+                leading: Icon(
+                  Icons.email_outlined,
+                ),
               ),
             ),
             
             SizedBox(
               width: 50.0,
             ),
-            
-            
-           
+
             Card (
-              
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(40),
+              ),
               color: Colors.white,
+              elevation: 20.0,
               margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 15.0),
               child: ListTile(
-                
                 title: Text("Password"),
-                
                 subtitle: Text("**********"),
-                
                 leading: Icon(
                   Icons.lock,
                 ),
@@ -84,7 +81,7 @@ class MyApp extends StatelessWidget {
               ),
               color: Color.fromARGB(255, 2, 42, 74),
               margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 15.0),
-              elevation: 10.0,
+              elevation: 20.0,
                 child: Center(
                   heightFactor: 2.0,
                   child: Text(
